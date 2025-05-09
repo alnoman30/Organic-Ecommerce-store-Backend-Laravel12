@@ -15,8 +15,8 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="css/vendor.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendor.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -136,7 +136,7 @@
           <div class="col-sm-4 col-lg-2 text-center text-sm-start d-flex gap-3 justify-content-center justify-content-md-start">
             <div class="d-flex align-items-center my-3 my-sm-0">
               <a href="index.html">
-                <img src="images/logo.svg" alt="logo" class="img-fluid">
+                <img src="{{ asset('assets/images/logo.svg') }}" alt="logo" class="img-fluid">
               </a>
             </div>
           </div>
@@ -217,12 +217,12 @@
                 <h2 class="mt-5">Download Organic App</h2>
                 <p>Online Orders made easy, fast and reliable</p>
                 <div class="d-flex gap-2 flex-wrap mb-5">
-                  <a href="#" title="App store"><img src="images/img-app-store.png" alt="app-store"></a>
-                  <a href="#" title="Google Play"><img src="images/img-google-play.png" alt="google-play"></a>
+                  <a href="#" title="App store"><img src="{{ asset('assets/images/img-app-store.png') }}" alt="app-store"></a>
+                  <a href="#" title="Google Play"><img src="{{ asset('assets/images/img-google-play.png') }}" alt="google-play"></a>
                 </div>
               </div>
               <div class="col-md-5">
-                <img src="images/banner-onlineapp.png" alt="phone" class="img-fluid">
+                <img src="{{ asset('assets/images/banner-onlineapp.png') }}" alt="phone" class="img-fluid">
               </div>
             </div>
           </div>
@@ -323,7 +323,7 @@
 
           <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="footer-menu">
-              <img src="images/logo.svg" width="240" height="70" alt="logo">
+              <img src="{{ asset('assets/images/logo.svg') }}" width="240" height="70" alt="logo">
               <div class="social-links mt-3">
                 <ul class="d-flex list-unstyled gap-2">
                   <li>
@@ -459,11 +459,11 @@
     </div>
 
 
-        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="{{ asset('assets/js/jquery-1.11.0.min.js') }}"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/script.js"></script>
+        <script src="{{ asset('assets/js/plugins.js') }}"></script>
+        <script src="{{ asset('assets/js/script.js') }}"></script>
     </body>
 </html>
 

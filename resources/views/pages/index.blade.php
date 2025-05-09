@@ -2,7 +2,7 @@
 @section('title', 'Organic - Eshop')
 
 @section('content')
-      <section style="background-image: url('images/banner-1.jpg');background-repeat: no-repeat;background-size: cover;">
+      <section style="background-image: url('{{ asset('assets/images/banner-1.jpg') }}');background-repeat: no-repeat;background-size: cover;">
       <div class="container-lg">
         <div class="row">
           <div class="col-lg-6 pt-5 mt-5">
@@ -111,51 +111,51 @@
             <div class="category-carousel swiper">
               <div class="swiper-wrapper">
                 <a href="category.html" class="nav-link swiper-slide text-center">
-                  <img src="images/category-thumb-1.jpg" class="rounded-circle" alt="Category Thumbnail">
+                  <img src="{{ asset('assets/images/category-thumb-1.jpg') }}" class="rounded-circle" alt="Category Thumbnail">
                   <h4 class="fs-6 mt-3 fw-normal category-title">Fruits & Veges</h4>
                 </a>
                 <a href="category.html" class="nav-link swiper-slide text-center">
-                  <img src="images/category-thumb-2.jpg" class="rounded-circle" alt="Category Thumbnail">
+                  <img src="{{ asset('assets/images/category-thumb-2.jpg') }}" class="rounded-circle" alt="Category Thumbnail">
                   <h4 class="fs-6 mt-3 fw-normal category-title">Breads & Sweets</h4>
                 </a>
                 <a href="category.html" class="nav-link swiper-slide text-center">
-                  <img src="images/category-thumb-3.jpg" class="rounded-circle" alt="Category Thumbnail">
+                  <img src="{{ asset('assets/images/category-thumb-3.jpg') }}" class="rounded-circle" alt="Category Thumbnail">
                   <h4 class="fs-6 mt-3 fw-normal category-title">Fruits & Veges</h4>
                 </a>
                 <a href="category.html" class="nav-link swiper-slide text-center">
-                  <img src="images/category-thumb-4.jpg" class="rounded-circle" alt="Category Thumbnail">
+                  <img src="{{ asset('assets/images/category-thumb-4.jpg') }}" class="rounded-circle" alt="Category Thumbnail">
                   <h4 class="fs-6 mt-3 fw-normal category-title">Beverages</h4>
                 </a>
                 <a href="category.html" class="nav-link swiper-slide text-center">
-                  <img src="images/category-thumb-5.jpg" class="rounded-circle" alt="Category Thumbnail">
+                  <img src="{{ asset('assets/images/category-thumb-5.jpg') }}" class="rounded-circle" alt="Category Thumbnail">
                   <h4 class="fs-6 mt-3 fw-normal category-title">Meat Products</h4>
                 </a>
                 <a href="category.html" class="nav-link swiper-slide text-center">
-                  <img src="images/category-thumb-6.jpg" class="rounded-circle" alt="Category Thumbnail">
+                  <img src="{{ asset('assets/images/category-thumb-6.jpg') }}" class="rounded-circle" alt="Category Thumbnail">
                   <h4 class="fs-6 mt-3 fw-normal category-title">Breads</h4>
                 </a>
                 <a href="category.html" class="nav-link swiper-slide text-center">
-                  <img src="images/category-thumb-7.jpg" class="rounded-circle" alt="Category Thumbnail">
+                  <img src="{{ asset('assets/images/category-thumb-7.jpg') }}" class="rounded-circle" alt="Category Thumbnail">
                   <h4 class="fs-6 mt-3 fw-normal category-title">Fruits & Veges</h4>
                 </a>
                 <a href="category.html" class="nav-link swiper-slide text-center">
-                  <img src="images/category-thumb-8.jpg" class="rounded-circle" alt="Category Thumbnail">
+                  <img src="{{ asset('assets/images/category-thumb-8.jpg') }}" class="rounded-circle" alt="Category Thumbnail">
                   <h4 class="fs-6 mt-3 fw-normal category-title">Breads & Sweets</h4>
                 </a>
                 <a href="category.html" class="nav-link swiper-slide text-center">
-                  <img src="images/category-thumb-1.jpg" class="rounded-circle" alt="Category Thumbnail">
+                  <img src="{{ asset('assets/images/category-thumb-1.jpg') }}" class="rounded-circle" alt="Category Thumbnail">
                   <h4 class="fs-6 mt-3 fw-normal category-title">Fruits & Veges</h4>
                 </a>
                 <a href="category.html" class="nav-link swiper-slide text-center">
-                  <img src="images/category-thumb-1.jpg" class="rounded-circle" alt="Category Thumbnail">
+                  <img src="{{ asset('assets/images/category-thumb-1.jpg') }}" class="rounded-circle" alt="Category Thumbnail">
                   <h4 class="fs-6 mt-3 fw-normal category-title">Beverages</h4>
                 </a>
                 <a href="category.html" class="nav-link swiper-slide text-center">
-                  <img src="images/category-thumb-1.jpg" class="rounded-circle" alt="Category Thumbnail">
+                  <img src="{{ asset('assets/images/category-thumb-1.jpg') }}" class="rounded-circle" alt="Category Thumbnail">
                   <h4 class="fs-6 mt-3 fw-normal category-title">Meat Products</h4>
                 </a>
                 <a href="category.html" class="nav-link swiper-slide text-center">
-                  <img src="images/category-thumb-1.jpg" class="rounded-circle" alt="Category Thumbnail">
+                  <img src="{{ asset('assets/images/category-thumb-1.jpg') }}" class="rounded-circle" alt="Category Thumbnail">
                   <h4 class="fs-6 mt-3 fw-normal category-title">Breads</h4>
                 </a>
                 
@@ -194,7 +194,7 @@
                 <div class="product-item">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-1.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-1.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -229,7 +229,7 @@
                 <div class="product-item">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-2.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-2.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -264,7 +264,7 @@
                 <div class="product-item">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-3.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-3.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -299,7 +299,7 @@
                 <div class="product-item">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-4.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-4.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -334,7 +334,7 @@
                 <div class="product-item">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-5.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-5.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -369,7 +369,7 @@
                 <div class="product-item">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-6.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-6.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -404,7 +404,7 @@
                 <div class="product-item">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-7.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-7.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -439,7 +439,7 @@
                 <div class="product-item">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-8.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-8.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -474,7 +474,7 @@
                 <div class="product-item">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-9.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-9.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -509,7 +509,7 @@
                 <div class="product-item">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-10.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-10.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -557,7 +557,7 @@
 
             <div class="banner-blocks">
             
-              <div class="banner-ad d-flex align-items-center large bg-info block-1" style="background: url('images/banner-ad-1.jpg') no-repeat; background-size: cover;">
+              <div class="banner-ad d-flex align-items-center large bg-info block-1" style="background: url('{{ asset('assets/images/banner-ad-1.jpg') }}') no-repeat; background-size: cover;">
                 <div class="banner-content p-5">
                   <div class="content-wrapper text-light">
                     <h3 class="banner-title text-light">Items on SALE</h3>
@@ -567,7 +567,7 @@
                 </div>
               </div>
               
-              <div class="banner-ad bg-success-subtle block-2" style="background:url('images/banner-ad-2.jpg') no-repeat;background-size: cover">
+              <div class="banner-ad bg-success-subtle block-2" style="background:url('{{ asset('assets/images/banner-ad-2.jpg') }}') no-repeat;background-size: cover">
                 <div class="banner-content align-items-center p-5">
                   <div class="content-wrapper text-light">
                     <h3 class="banner-title text-light">Combo offers</h3>
@@ -577,7 +577,7 @@
                 </div>
               </div>
 
-              <div class="banner-ad bg-danger block-3" style="background:url('images/banner-ad-3.jpg') no-repeat;background-size: cover">
+              <div class="banner-ad bg-danger block-3" style="background:url('{{ asset('assets/images/banner-ad-3.jpg') }}') no-repeat;background-size: cover">
                 <div class="banner-content align-items-center p-5">
                   <div class="content-wrapper text-light">
                     <h3 class="banner-title text-light">Discount Coupons</h3>
@@ -624,7 +624,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-10.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-10.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -657,7 +657,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-11.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-11.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -690,7 +690,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-12.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-12.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -723,7 +723,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-13.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-13.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -756,7 +756,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-14.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-14.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -789,7 +789,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-15.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-15.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -822,7 +822,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-16.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-16.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -855,7 +855,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-17.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-17.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -888,7 +888,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-18.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-18.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -931,7 +931,7 @@
     <section>
       <div class="container-lg">
 
-        <div class="bg-secondary text-light py-5 my-5" style="background: url('images/banner-newsletter.jpg') no-repeat; background-size: cover;">
+        <div class="bg-secondary text-light py-5 my-5" style="background: url('{{ asset('assets/images/banner-newsletter.jpg') }}') no-repeat; background-size: cover;">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-md-5 p-3">
@@ -995,7 +995,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-15.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-15.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -1028,7 +1028,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-16.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-16.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -1061,7 +1061,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-17.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-17.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -1094,7 +1094,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-18.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-18.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -1127,7 +1127,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-19.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-19.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -1160,7 +1160,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-10.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-10.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -1193,7 +1193,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-11.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-11.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -1226,7 +1226,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-12.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-12.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -1259,7 +1259,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-13.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-13.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -1328,7 +1328,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-20.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-20.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -1361,7 +1361,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-1.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-1.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -1394,7 +1394,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-21.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-21.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -1427,7 +1427,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-22.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-22.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -1460,7 +1460,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-23.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-23.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -1493,7 +1493,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-10.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-10.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -1526,7 +1526,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-11.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-11.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -1559,7 +1559,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-12.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-12.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -1592,7 +1592,7 @@
                 <div class="product-item swiper-slide">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="images/product-thumb-13.png" alt="Product Thumbnail" class="tab-image">
+                      <img src="{{ asset('assets/images/product-thumb-13.png') }}" alt="Product Thumbnail" class="tab-image">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
@@ -1644,7 +1644,7 @@
             <article class="post-item card border-0 shadow-sm p-3">
               <div class="image-holder zoom-effect">
                 <a href="#">
-                  <img src="images/post-thumbnail-1.jpg" alt="post" class="card-img-top">
+                  <img src="{{ asset('assets/images/post-thumbnail-1.jpg') }}" alt="post" class="card-img-top">
                 </a>
               </div>
               <div class="card-body">
@@ -1665,7 +1665,7 @@
             <article class="post-item card border-0 shadow-sm p-3">
               <div class="image-holder zoom-effect">
                 <a href="#">
-                  <img src="images/post-thumbnail-2.jpg" alt="post" class="card-img-top">
+                  <img src="{{ asset('assets/images/post-thumbnail-2.jpg') }}" alt="post" class="card-img-top">
                 </a>
               </div>
               <div class="card-body">
@@ -1686,7 +1686,7 @@
             <article class="post-item card border-0 shadow-sm p-3">
               <div class="image-holder zoom-effect">
                 <a href="#">
-                  <img src="images/post-thumbnail-3.jpg" alt="post" class="card-img-top">
+                  <img src="{{ asset('assets/images/post-thumbnail-3.jpg') }}" alt="post" class="card-img-top">
                 </a>
               </div>
               <div class="card-body">
@@ -1707,113 +1707,7 @@
       </div>
     </section>
 
-    <section class="pb-4 my-4">
-      <div class="container-lg">
 
-        <div class="bg-warning pt-5 rounded-5">
-          <div class="container">
-            <div class="row justify-content-center align-items-center">
-              <div class="col-md-4">
-                <h2 class="mt-5">Download Organic App</h2>
-                <p>Online Orders made easy, fast and reliable</p>
-                <div class="d-flex gap-2 flex-wrap mb-5">
-                  <a href="#" title="App store"><img src="images/img-app-store.png" alt="app-store"></a>
-                  <a href="#" title="Google Play"><img src="images/img-google-play.png" alt="google-play"></a>
-                </div>
-              </div>
-              <div class="col-md-5">
-                <img src="images/banner-onlineapp.png" alt="phone" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </section>
 
-    <section class="py-4">
-      <div class="container-lg">
-        <h2 class="my-4">People are also looking for</h2>
-        <a href="#" class="btn btn-warning me-2 mb-2">Blue diamon almonds</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Angie’s Boomchickapop Corn</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Salty kettle Corn</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Chobani Greek Yogurt</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Sweet Vanilla Yogurt</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Foster Farms Takeout Crispy wings</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Warrior Blend Organic</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Chao Cheese Creamy</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Chicken meatballs</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Blue diamon almonds</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Angie’s Boomchickapop Corn</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Salty kettle Corn</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Chobani Greek Yogurt</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Sweet Vanilla Yogurt</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Foster Farms Takeout Crispy wings</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Warrior Blend Organic</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Chao Cheese Creamy</a>
-        <a href="#" class="btn btn-warning me-2 mb-2">Chicken meatballs</a>
-      </div>
-    </section>
 
-    <section class="py-5">
-      <div class="container-lg">
-        <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-5">
-          <div class="col">
-            <div class="card mb-3 border border-dark-subtle p-3">
-              <div class="text-dark mb-3">
-                <svg width="32" height="32"><use xlink:href="#package"></use></svg>
-              </div>
-              <div class="card-body p-0">
-                <h5>Free delivery</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-3 border border-dark-subtle p-3">
-              <div class="text-dark mb-3">
-                <svg width="32" height="32"><use xlink:href="#secure"></use></svg>
-              </div>
-              <div class="card-body p-0">
-                <h5>100% secure payment</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-3 border border-dark-subtle p-3">
-              <div class="text-dark mb-3">
-                <svg width="32" height="32"><use xlink:href="#quality"></use></svg>
-              </div>
-              <div class="card-body p-0">
-                <h5>Quality guarantee</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-3 border border-dark-subtle p-3">
-              <div class="text-dark mb-3">
-                <svg width="32" height="32"><use xlink:href="#savings"></use></svg>
-              </div>
-              <div class="card-body p-0">
-                <h5>guaranteed savings</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-3 border border-dark-subtle p-3">
-              <div class="text-dark mb-3">
-                <svg width="32" height="32"><use xlink:href="#offers"></use></svg>
-              </div>
-              <div class="card-body p-0">
-                <h5>Daily offers</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>  
 @endsection
