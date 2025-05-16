@@ -43,9 +43,8 @@
                                                     <th>Name</th>
                                                     <th>Price</th>
                                                     <th>SalePrice</th>
-                                                    <th>SKU</th>
                                                     <th>Category</th>
-                                                    <th>Brand</th>
+                                                    <th>Discount</th>
                                                     <th>Featured</th>
                                                     <th>Stock</th>
                                                     <th>Quantity</th>
@@ -55,24 +54,23 @@
                                             <tbody>
                                                 @foreach ( $products as $product )
                                                 <tr>
-                                                    <td>6</td>
+                                                    <td>{{ $loop->iteration}}</td>
                                                     <td class="pname">
                                                         <div class="image">
-                                                            <img src="1718623519.html" alt="" class="image">
+                                                            <img src="{{ asset('uploads/products')}}/{{ $product->image}}" alt="{{ $product->name}}" class="">
                                                         </div>
                                                         <div class="name">
-                                                            <a href="#" class="body-title-2">Product6</a>
-                                                            <div class="text-tiny mt-3">product6</div>
+                                                            <a href="#" class="body-title-2">{{ $product->name}}</a>
+                                                            <div class="text-tiny mt-3">{{ $product->slug}}</div>
                                                         </div>
                                                     </td>
-                                                    <td>$128.00</td>
-                                                    <td>$110.00</td>
-                                                    <td>SKU7868</td>
-                                                    <td>Category3</td>
-                                                    <td>Brand2</td>
-                                                    <td>Yes</td>
-                                                    <td>instock</td>
-                                                    <td>11</td>
+                                                    <td>${{ $product->regular_price }}</td>
+                                                    <td>${{ $product->sale_price}}</td>
+                                                    <td>{{ $product->category->name}}</td>
+                                                    <td>{{ $product->discount_percent }}%</td>
+                                                    <td>{{ $product->featured }}</td>
+                                                    <td>{{ $product->stock_status }}</td>
+                                                    <td>{{ $product->quantity }}</td>
                                                     <td>
                                                         <div class="list-icon-function">
                                                             <a href="#" target="_blank">

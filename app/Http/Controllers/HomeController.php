@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Enums\UserRole;
 use App\Models\Blog;
 use App\Models\Category;
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -31,7 +32,8 @@ class HomeController extends Controller
     public function index(){
         $items = Blog::with('blog_category')->latest()->take(3)->get();
         $categories = Category::all();
-        return view('pages.index', compact('items', 'categories'));
+        $featuredProducts = Product::where('featured', true)->get();
+        return view('pages.index', compact('items', 'categories', 'featuredProducts'));
     }
     public function blogPage(){
         $items = Blog::with('blog_category')->latest()->paginate(6);;
