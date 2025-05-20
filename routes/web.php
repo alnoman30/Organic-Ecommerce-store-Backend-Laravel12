@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BlogCategoryController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ContactMessageController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
@@ -17,6 +18,9 @@ Route::get('/dashboard', [HomeController::class, 'dashboard'])->middleware(['aut
 Route::get('/blog', [HomeController::class, 'blogPage' ])->name('blog');
 Route::get('/blog/{slug}', [HomeController::class, 'blogDetailsPage' ])->name('blog-details');
 Route::get('/shop', [HomeController::class, 'shopPage' ])->name('shop');
+Route::get('/about-us', [HomeController::class, 'aboutUsPage' ])->name('about-us');
+Route::get('/contact-us', [HomeController::class, 'contactUsPage' ])->name('contact-us');
+Route::post('/contact-submit', [ContactMessageController::class, 'messageSubmit' ])->name('messageSubmit');
 
 
 // Authentication routes
@@ -74,4 +78,10 @@ Route::middleware(['admin'])->prefix('admin')->name('admin.')->group(function ()
     // Users and Settings
     Route::get('/users', [AdminController::class, 'users'])->name('users');
     Route::get('/settings', [AdminController::class, 'settings'])->name('settings');
+
+    // Inbox messages
+    Route::get('/messages', [AdminController::class, 'inbox'])->name('messages.index');
+    Route::get('/messages/{id}', [AdminController::class, 'message_show'])->name('messages.show');
+    Route::get('/admin/messages/read/{id}', [AdminController::class, 'markAsRead'])->name('inbox.read');
+
 });

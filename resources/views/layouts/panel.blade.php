@@ -192,6 +192,29 @@
                                         <div class="text">Settings</div>
                                     </a>
                                 </li>
+                                <li class="menu-item">
+                                    <a href="{{ route('admin.messages.index')}}" class="">
+                                        <div class="icon"><i class="icon-mail"></i></div>
+                                        <div class="text">Inbox</div>
+                                        @if ($unreadCount > 0)
+                                         <div class="number msg_count">
+                                            {{ $unreadCount }}
+                                         </div>
+                                        @endif
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <form action="{{ route('user.logout')}}" method="POST" class="logout-form">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="user-item">
+                                        <div class="icon">
+                                            <i class="icon-log-out"></i>
+                                        </div>
+                                        <div class="body-title-2">Log out</div>
+                                        </button>
+                                    </form>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -426,54 +449,7 @@
                                                 </span>
                                             </span>
                                         </button>
-                                        <ul class="dropdown-menu dropdown-menu-end has-content"
-                                            aria-labelledby="dropdownMenuButton3">
-                                            <li>
-                                                <a href="#" class="user-item">
-                                                    <div class="icon">
-                                                        <i class="icon-user"></i>
-                                                    </div>
-                                                    <div class="body-title-2">Account</div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="user-item">
-                                                    <div class="icon">
-                                                        <i class="icon-mail"></i>
-                                                    </div>
-                                                    <div class="body-title-2">Inbox</div>
-                                                    <div class="number">27</div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="user-item">
-                                                    <div class="icon">
-                                                        <i class="icon-file-text"></i>
-                                                    </div>
-                                                    <div class="body-title-2">Taskboard</div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="user-item">
-                                                    <div class="icon">
-                                                        <i class="icon-headphones"></i>
-                                                    </div>
-                                                    <div class="body-title-2">Support</div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <form action="{{ route('user.logout')}}" method="POST" class="logout-form">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="user-item">
-                                                    <div class="icon">
-                                                        <i class="icon-log-out"></i>
-                                                    </div>
-                                                    <div class="body-title-2">Log out</div>
-                                                    </button>
-                                                </form>
-                                                </li>
-                                        </ul>
+
                                     </div>
                                 </div>
 

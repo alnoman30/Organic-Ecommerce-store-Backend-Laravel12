@@ -174,13 +174,13 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
                 <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages">
-                  <li><a href="about.html" class="dropdown-item">About Us </a></li>
+                  <li><a href="{{ route('about-us')}}" class="dropdown-item">About Us </a></li>
                   <li><a href="{{ route('shop')}}" class="dropdown-item">Shop </a></li>
                   <li><a href="cart.html" class="dropdown-item">Cart </a></li>
                   <li><a href="checkout.html" class="dropdown-item">Checkout </a></li>
                   <li><a href="{{ route('blog')}}" class="dropdown-item">Blog </a></li>
-                  <li><a href="contact.html" class="dropdown-item">Contact </a></li>
-                  <li><a href="dashboard.html" class="dropdown-item">My Account </a></li>
+                  <li><a href="{{ route('contact-us')}}" class="dropdown-item">Contact </a></li>
+                  <li><a href="{{ route('dashboard')}}" class="dropdown-item">My Account </a></li>
                 </ul>
               </li>
             </ul>

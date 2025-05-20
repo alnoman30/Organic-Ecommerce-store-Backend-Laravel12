@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\BlogCategory;
 use App\Models\Category;
+use App\Models\ContactMessage;
 use App\Models\Product;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -74,4 +75,22 @@ class AdminController extends Controller
    public function settings(){
     return view('admin.settings');
    }
+   // INBOX MESSAGES
+   public function inbox(){
+    $messages = ContactMessage::latest()->get();
+    return view('admin.inbox', compact('messages'));
+   }
+   public function markAsRead($id){
+        $message = ContactMessage::findOrFail($id);
+        $message->is_read = true;
+        $message->save();
+
+    return redirect()->back();
+   }
+   public function message_show($id){
+      $message = ContactMessage::findOrFail($id);
+
+      return view('admin.inbox-view', compact('message'));
+   }
+   // INBOX MESSAGES
 }

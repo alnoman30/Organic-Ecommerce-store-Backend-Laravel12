@@ -12,6 +12,13 @@ use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
+    public function registerPage(){
+        return view('pages.register');
+    }
+
+    public function loginPage(){
+        return view('pages.login');
+    }
 
     public function dashboard(){
         if(Auth::id()){
@@ -51,12 +58,13 @@ class HomeController extends Controller
         $categories = Category::all();
         return view('pages.shop', compact('products','categories'));
     }
-    public function registerPage(){
-        return view('pages.register');
+
+    public function aboutUsPage(){
+        return view('pages.about-us');
+    }
+    public function contactUsPage(){
+        return view('pages.contact-us');
     }
 
-    public function loginPage(){
-        return view('pages.login');
-    }
     
 }

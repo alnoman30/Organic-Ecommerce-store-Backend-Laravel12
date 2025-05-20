@@ -4119,6 +4119,60 @@ select.h40 {
   z-index: -1;
   animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
+.msg_count{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  font-weight: 500;
+  line-height: 17px;
+  border-radius: 999px;
+  background: #ffae00;
+  color: #fff;
+  margin-left: 10px;
+}
+.msg_count::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #ffae00;
+  border-radius: 50%;
+  z-index: -1;
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  margin-left: 10px;
+}
+/* .msg_count{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  font-weight: 500;
+  line-height: 17px;
+  border-radius: 999px;
+  background: #ffae00;
+  color: #fff;
+  margin-left: 10px;
+}
+.msg_count::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #ffae00;
+  border-radius: 50%;
+  z-index: -1;
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  margin-left: 10px;
+} */
 .popup-wrap.message .dropdown-menu.show {
   width: 344px;
   margin-top: 20px !important;
